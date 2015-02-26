@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<title>JavaScript-Study(jQuery)</title>
+</head>
+<body>
+	<div id ="content">
+		<div class="inner">
+			<p>ツールを開くには、タイトルバーをクリックしてください</p>
+			<div id="toolTitle">
+				<a href = "#toolContent">
+					ファイル
+				</a>
+
+				<div id = "toolContent">
+					<ul>
+						<li>新規</li>
+						<li>上書き保存</li>
+						<li>名前を付けて保存</li>
+						<li>とじる</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="C:\Users\Masayuki\Desktop\Job\JavaScript\Study\js\jquery.js" ></script>
+	<script type="text/javascript">
+		$('#toolContent').hide();
+		// $('#toolTitle').bind('click', function() {
+		// 	if ($('#toolContent').css('display') === 'none') {
+		// 		$('#toolContent').slideDown();
+		// 	}
+		// 	else {
+		// 		$('#toolContent').slideUp();
+		// 	}
+		// });
+		$('#toolTitle').bind('click', function() {
+			$('#toolContent').slideToggle();
+		});
+	</script>
+</body>
+</html>
