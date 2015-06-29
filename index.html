@@ -22,6 +22,10 @@
 		</li>
 	</ul>
 
+	<p><a href="http://google.com">Google</a></p>
+	<p><a href="http://yahoo.co.jp">Yahoo!</a></p>
+	<p><a href="http://dotinstall.com">Dot install</a></p>
+
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script>
 		// $(document).ready(function() {
@@ -51,7 +55,9 @@
 			//$('#main .item').css('color', 'red');
 			// $('p, item').css('color', 'red');
 			//$('.item + .item').css('color', 'red');
-			// ■レッスン2☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			// ■レッスン2☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↑
+
+			// ■レッスン3☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
 			// フィルタ
 			// :eq()
 			// :gt()・・・()内の値より大きいものが対象になる, lt()・・・()内の値より小さいものが対象になる
@@ -64,7 +70,40 @@
 			//$('#sub > li:odd').css('color', 'red');
 			//$('#sub > li:contains(4)').css('color', 'red');
 			//$('#sub > li:first').css('color', 'red');
-			$('#sub > li:last').css('color', 'red');
+			//$('#sub > li:last').css('color', 'red');
+			// ■レッスン3☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↑
+
+			// ■レッスン4☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			// メソッドを使ったDOM要素の指定
+			// parent(), children()
+			// next(), prev()
+			// siblings() - 兄弟要素
+			// subも含む子要素全てに適用
+			//$('#sub').parent().css('color', 'red');
+			// subの子要素全てに適用
+			//$('#sub').children().css('color', 'red');
+			// 指定した要素の次の要素に適用
+			//$("#sub > li:eq(2)").next().css('color', 'red');
+			// 指定した要素の前の要素に適用
+			//$("#sub > li:eq(2)").prev().css('color', 'red');
+			// 指定した要素の前後の要素に適用
+			//$("#sub > li:eq(2)").siblings().css('color', 'red');
+			// ■レッスン4☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↑
+
+			// ■レッスン5☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			// 属性セレクタ
+			// =	等しい
+			//$('a[href="http://google.com"]').css('background', 'red');
+			// !=	等しくない
+			//$('a[href!="http://google.com"]').css('background', 'red');
+			// *=	含む
+			//$('a[href*="http://dotinstall.com"]').css('background', 'red');
+			// ^=	含まない
+			//$('a[href^="http://dotinstall.com"]').css('background', 'red');
+			// $=	～で始まり～で終わる
+			$('a[href$="jp"]').css('background', 'red');
+			// ■レッスン5☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↑
+
 		});
 	</script>
 </body>
