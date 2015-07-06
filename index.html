@@ -3,6 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>jQueryの練習</title>
+	<style>
+		.myStyle {
+			border: 5px solid green;
+			font-size: 48px;
+		}
+	</style>
 </head>
 <body>
 	<p>jQueryの練習</p>
@@ -101,8 +107,20 @@
 			// ^=	含まない
 			//$('a[href^="http://dotinstall.com"]').css('background', 'red');
 			// $=	～で始まり～で終わる
-			$('a[href$="jp"]').css('background', 'red');
+			//$('a[href$="jp"]').css('background', 'red');
 			// ■レッスン5☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↑
+
+			// ■レッスン6☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			// セレクタ.メソッド
+			// .css 設定　取得
+			//$('p').css('color', 'red').css('background', 'blue');
+			// 要素に適用されている値を取得
+			//console.log($('p').css('color'));
+			// addClass(スタイルの追加)
+			$('p').addClass('myStyle');
+			// removeClass(スタイルの削除)
+			$('p').removeClass('myStyle');
+			// ■レッスン6☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
 
 		});
 	</script>
