@@ -28,9 +28,11 @@
 		</li>
 	</ul>
 
-	<p><a href="http://google.com">Google</a></p>
+	<p><a href="http://google.com" data-sitename="google">Google</a></p>
 	<p><a href="http://yahoo.co.jp">Yahoo!</a></p>
 	<p><a href="http://dotinstall.com">Dot install</a></p>
+
+	<input type="text" value="hello">
 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script>
@@ -117,10 +119,35 @@
 			// 要素に適用されている値を取得
 			//console.log($('p').css('color'));
 			// addClass(スタイルの追加)
-			$('p').addClass('myStyle');
+			//$('p').addClass('myStyle');
 			// removeClass(スタイルの削除)
-			$('p').removeClass('myStyle');
+			//$('p').removeClass('myStyle');
 			// ■レッスン6☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+
+			// ■レッスン7☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			// 【attr】
+			// 値(設定値)の取得
+			//console.log($('a').attr('href'));
+			// 値(設定値)の設定
+			//$('a').attr('href', 'http://google.co.jp');
+			// 【data】
+			// 値(設定値)の取得
+			//console.log($('a').data('sitename'));
+			// ■レッスン7☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+
+			// ■レッスン8☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			// 【タグの中身の操作】
+			// text
+			//$('p').text('just changed');
+			// html
+			//$('p').html('<a href="">click me!</a>');
+			// val
+			//console.log($('input').val());	// 値の取得
+			//$('input').val('hello again!');	// 値の設定
+			// remove,	empty
+			//$('p').empty();		// p要素内を削除
+			$('p').remove();		// p要素自体を削除
+			// ■レッスン8☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
 
 		});
 	</script>
