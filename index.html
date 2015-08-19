@@ -33,6 +33,9 @@
 	<p><a href="http://dotinstall.com">Dot install</a></p>
 
 	<input type="text" value="hello">
+	<br />
+
+	<div id="box" style="width:100px; height:100px; background:red;"></div>
 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script>
@@ -146,9 +149,29 @@
 			//$('input').val('hello again!');	// 値の設定
 			// remove,	empty
 			//$('p').empty();		// p要素内を削除
-			$('p').remove();		// p要素自体を削除
+			//$('p').remove();		// p要素自体を削除
 			// ■レッスン8☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
 
+			// ■レッスン9☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			//【イベント】
+			// click
+			// $('#box').click(function() {
+			// 	alert('hi!');
+			// });
+			//mouseover、mouseout
+			$('#box')
+				.mouseover(function() {
+					$(this).css('background', 'green');
+				})
+				.mouseout(function() {
+					$(this).css('background', 'red');
+				})
+				.mousemove(function(e) {
+					$(this).text(e.pageX);
+				});
+			// mousemove
+
+			// ■レッスン9☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
 		});
 	</script>
 </body>
