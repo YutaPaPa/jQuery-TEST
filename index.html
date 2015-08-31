@@ -37,6 +37,13 @@
 
 	<div id="box" style="width:100px; height:100px; background:red;"></div>
 
+	<input type="text" id="name">
+	<select id="members" name="members">
+		<option>enda</option>
+		<option>masayuki</option>
+		<option>dotinstall</option>
+	</select>
+
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script>
 		// $(document).ready(function() {
@@ -159,19 +166,35 @@
 			// 	alert('hi!');
 			// });
 			//mouseover、mouseout
-			$('#box')
-				.mouseover(function() {
-					$(this).css('background', 'green');
-				})
-				.mouseout(function() {
-					$(this).css('background', 'red');
-				})
-				.mousemove(function(e) {
-					$(this).text(e.pageX);
-				});
+			// $('#box')
+				// .mouseover(function() {
+					// $(this).css('background', 'green');
+				// })
+				// .mouseout(function() {
+					// $(this).css('background', 'red');
+				// })
+				// .mousemove(function(e) {
+					// $(this).text(e.pageX);
+				// });
 			// mousemove
-
 			// ■レッスン9☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+
+			// ■レッスン10☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
+			$(function() {
+				// focus、blur
+				$('#name')
+					.focus(function() {
+						$(this).css('background', 'red');
+					})
+					.blur(function() {
+						$(this).css('background', 'white');
+					});
+				// change
+				$('#members').change(function() {
+					alert('changed!');
+				});
+			});
+			// ■レッスン10☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★↓
 		});
 	</script>
 </body>
