@@ -1,0 +1,26 @@
+[
+        {
+            "country": "ケニア",
+            "CIC": 0,
+            "INSPECTION": 1,
+            "EXPORT" : 1
+        },
+        {
+            "country": "タンザニア",
+            "CIC": 0,
+            "INSPECTION": 1,
+            "EXPORT" : 0
+        },
+        {
+            "country": "ウガンダ",
+            "CIC": 1,
+            "INSPECTION": 1,
+            "EXPORT" : 1
+        },
+        {
+            "country": "モザンビーク",
+            "CIC": 0,
+            "INSPECTION": 0,
+            "EXPORT" : 0
+        }
+]

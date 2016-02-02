@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$.ajax({
+				type            : 'GET',
+				url                : 'sample.json',
+			   	 dataType: 'json',
+
+				success: function(json){
+					for (var i = 0; i < json.length; i++)
+					{
+						if (json[i].CIC == 0)
+						{
+							$("#CIC").hide();
+						}
+
+						if (json[i].INSPECTION == 0)
+						{
+							$("#INSPECTION").hide();
+						}
+
+						if (json[i].EXPORT == 0)
+						{
+							$("#EXPORT").hide();
+						}
+					}
+
+					// console.log(json.Employee[0].Age);
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<p id="CIC">【Car Info Check】<br>
+			<input type="radio" name="q1" value="利用する" checked="true"> 利用する
+			<input type="radio" name="q1" value="利用しない"> 利用しない
+		</p>
+
+		<p id="INSPECTION">【輸出前検査】<br>
+			<input type="radio" name="q2" value="利用する" checked="true"> 利用する
+			<input type="radio" name="q2" value="利用しない"> 利用しない
+		</p>
+
+		<p id="EXPORT">【輸出末梢原本到着】<br>
+			<input type="radio" name="q3" value="利用する" checked="true"> 利用する
+			<input type="radio" name="q3" value="利用しない"> 利用しない
+		</p>
+	</body>
+</html>
