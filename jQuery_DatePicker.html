@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>jQuery UIでカレンダーを簡単に利用する</title>
+<link rel="stylesheet" href="_shared/css/reset.css">
+<link rel="stylesheet" href="_shared/css/base.css">
+<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/sunny/jquery-ui.min.css" />
+
+</head>
+<body>
+
+<header>
+<div class="inner">
+<h1><span>ajax</span>jQuery UIでカレンダーを簡単に利用する</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<p>ご予約日：　<input type="text" id = "datepicker"></p>
+
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$("#datepicker").datepicker( {
+		showOn: "button",
+		buttonImage: "images/calendar.gif"
+	});
+</script>
+</body>
+</html>
